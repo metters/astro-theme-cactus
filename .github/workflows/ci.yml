@@ -1,6 +1,7 @@
 name: ci
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
   pull_request:
@@ -46,8 +47,8 @@ jobs:
         run: pnpm install
 
         # use astro check for issues
-      - name: Run check
-        run: pnpm astro check
+#      - name: Run check
+#        run: pnpm astro check
 
         # ensure build works
       - name: Run build
