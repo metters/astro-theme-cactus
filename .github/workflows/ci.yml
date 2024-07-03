@@ -46,6 +46,7 @@ jobs:
         run: pnpm install
 
         # use astro check for issues
+        # commented out due to issues with satori after installing react: https://github.com/withastro/language-tools/issues/885
 #      - name: Run check
 #        run: pnpm astro check
 
