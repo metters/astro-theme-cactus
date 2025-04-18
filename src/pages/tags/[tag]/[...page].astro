@@ -36,13 +36,13 @@ const meta = {
 const paginationProps = {
 	...(page.url.prev && {
 		prevUrl: {
-			text: "← Previous Tags",
+			text: "← Newer Posts (${tag})",
 			url: page.url.prev,
 		},
 	}),
 	...(page.url.next && {
 		nextUrl: {
-			text: "Next Tags →",
+			text: "Older Posts (${tag}) →",
 			url: page.url.next,
 		},
 	}),
@@ -58,7 +58,7 @@ const paginationProps = {
 	</div>
 	<section aria-labelledby={`tags-${tag}`}>
 		<h2 id={`tags-${tag}`} class="sr-only">Post List</h2>
-		<ul class="space-y-6">
+		<ul class="space-y-2">
 			{
 				page.data.map((p) => (
 					<li class="grid gap-2 sm:grid-cols-[auto_1fr]">
