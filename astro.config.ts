@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import mdx from "@astrojs/mdx";
+import react from '@astrojs/react';
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@tailwindcss/vite";
 import expressiveCode from "astro-expressive-code";
@@ -28,6 +29,7 @@ export default defineConfig({
 		domains: ["webmention.io"],
 	},
 	integrations: [
+    react(),
 		expressiveCode(expressiveCodeOptions),
 		icon(),
 		sitemap(),
