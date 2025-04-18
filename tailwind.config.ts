@@ -31,6 +31,9 @@ export default {
 						hr: {
 							borderTopStyle: "dashed",
 						},
+            p: {
+              textAlign: "justify",
+            },
 						strong: {
 							fontWeight: "700",
 						},
